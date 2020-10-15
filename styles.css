@@ -1,0 +1,95 @@
+#homeBtn, #liveReportsBtn, #aboutBtn {
+    margin-right: 8px ;
+}
+
+#title {
+    text-align: center;
+}
+
+#title > h1 {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 10px black;
+}
+
+/* title and padding size adjustment */
+@media screen and (min-width: 576px) {
+    #title > h1 {
+        font-size: 80px;
+    }
+    #aboutCard .card-body {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 575px) {
+    #title > h1 {
+        font-size: 16vw;
+    }
+}
+
+#chartContainer {
+    /* width: 100% causes a horizontal scrollbar */
+    width: 99.9%;
+}
+
+#coinNotFound, #noGraphData, #partialGraphData {
+    text-align: center;
+    font-size: large;
+    padding: 1%;
+}
+
+#about {
+    font-size: large;
+    padding-top: 2%;
+    padding: 25px;
+}
+
+#aboutCard {
+    max-width: 1000px;
+}
+
+#allCoins > .card {
+    width: 300px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.modal-body .card-title {
+    margin: 0%;
+}
+
+.custom-control {
+    float: right;
+    transform: scale(1.4);
+}
+
+/* toggle button custom color */
+input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #28a745!important;
+    background-color: #28a745!important;
+    border: #28a745 solid 2px!important;
+}
+
+.moreInfo {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+}
+
+.coinImg {
+    float: right;
+    padding: 2%;
+}
+
+.parallax {
+    background-image: url("/img/Kryptonite.jpg");
+    height: 30%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
