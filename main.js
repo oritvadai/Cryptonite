@@ -261,7 +261,10 @@ $(() => {
 
     // display the list of all coins
     function displaylist(coinList) {
-        let coinCards = "";
+        let coinCards = `
+                <h4 id="intro">
+                    To view changes in real time, select up to 5 currencies and go to "Live Reports"
+                </h4>`;
         for (let coin of coinList) {
             coinCards += `
                 <div class="card" id="${coin.id}">
@@ -341,6 +344,7 @@ $(() => {
         if (searchInput == "") {
             // clear not-found msg and show all coins
             $("#coinNotFound").empty();
+            $("#intro").show();
             for (let coin of globalCoinList) {
                 $(`#${coin.id}`).show();
             };
@@ -356,9 +360,10 @@ $(() => {
                 };
             }
             if (!coinFound) {
-                $("#coinNotFound").html(`"${$("#searchInput").val()}" was not found`);
+                $("#coinNotFound").html(`<h4> "${$("#searchInput").val()}" was not found </h4>`);
             } else {
                 $("#coinNotFound").empty();
+                $("#intro").show();
             };
         };
     };

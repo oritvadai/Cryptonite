@@ -12,6 +12,10 @@
     padding-bottom: 25px;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 10px black;
 }
+#intro {
+    width: 100%;
+    text-align: center;
+}
 
 /* title and padding size adjustment */
 @media screen and (min-width: 576px) {
@@ -36,7 +40,6 @@
 #coinNotFound, #noGraphData, #partialGraphData {
     text-align: center;
     font-size: large;
-    padding: 1%;
 }
 
 #about {
@@ -51,6 +54,7 @@
 
 #allCoins > .card {
     width: 300px;
+    margin: 5px;
 }
 
 .card-title {
